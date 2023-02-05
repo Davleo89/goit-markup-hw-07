@@ -8,14 +8,18 @@
   display: flex;
 }
 
-.footer .container .logo {
-  margin-bottom: 14px;
-  padding: 0;
-  display: block;
-}
+.footer {
+  .container {
+    .logo {
+      margin-bottom: 14px;
+      padding: 0;
+      display: block;
 
-.footer .container .logo:hover {
-  font-size: 27px;
+      &:hover {
+        font-size: 27px;
+      }
+    }
+  }
 }
 
 .address {
@@ -23,35 +27,51 @@
   height: 100px;
 }
 
-.footer .address .list-link {
-  margin-bottom: 10px;
+.footer {
+  .address {
+    .list-link {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
-.footer .address .list-link:last-child {
-  margin-bottom: 0;
+.footer {
+  .container {
+    .link {
+      display: block;
+      color: var(--white-color);
+      font-style: normal;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      margin-bottom: 14px;
+      padding: 0;
+
+      &:hover {
+        color: var(--color-blue);
+      }
+    }
+  }
 }
 
-.footer .container .link {
-  display: block;
-  color: var(--white-color);
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  margin-bottom: 14px;
-  padding: 0;
+.footer {
+  .container {
+    .footer-list {
+      font-style: normal;
+      padding: 0;
+    }
+  }
 }
 
-.footer .container .link:hover {
-  color: var(--color-blue);
-}
-
-.footer .container .footer-list {
-  font-style: normal;
-  padding: 0;
-}
-
-.footer .container .footer-list .link-contact {
-  padding: 0;
+.footer {
+  .footer-list {
+    .link-contact {
+      padding: 0;
+    }
+  }
 }
 
 .social-footer {
